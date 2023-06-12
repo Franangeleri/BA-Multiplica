@@ -6,17 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reels</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!--Parte de Css-->
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
+
+
     <header>
         <figure class="logo-3d">
             <img src="../img/logo img 3d.jpg" alt="logo">
         </figure>
-        <button id="abrir" class="abrir">abrir</button>
-        <nav class="nav">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
             <ul class="lista">
                 <li><a href="../pages/index.html">Inicio</a></li>
                 <li><a href="../pages/index2.html">Reel</a></li>
@@ -25,7 +30,6 @@
             </ul>
         </nav>
     </header>
-    <main>
 
     <h1 class="Reel">Reel de animación 3d</h1>
     <p class="parrafo">Animación realizada en Maya 3d para el curso de animación 3d para la escuela Da Vinci</p>
@@ -42,7 +46,8 @@
             <span>Francisco Tomas Angeleri &copy;</span>
         </div>
     </footer>
-
+    <!--Parte de javascript-->
+    <script src="../scripts/script.js"></script>
 
 </body>
 

@@ -40,7 +40,6 @@ header {
     border-radius: 10px;
     margin: 10px;
     padding: 5px;
-
 }
 
 .lista {
@@ -105,104 +104,86 @@ footer .titulo2 {
     /* Elimina el margen inferior del título */
 }
 
-/*.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-decoration: none;
-    list-style: none;
-    text-decoration: none;
-    gap: 60px;
-}*/
-
-.abrir {
+.abrir-menu {
     display: none;
+    border: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
-.cerrar {
+.cerrar-menu {
     display: none;
+    border: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
 /* para diferentes tamaños de pantalla*/
-@media (min-width: 320px) and (max-width: 780px) {
+@media screen and (max-width: 820px) {
 
-    .abrir {
+    .abrir-menu {
         display: block;
     }
 
-    .cerrar {
+    .cerrar-menu {
         display: block;
         flex-direction: column;
-    }
-
-    .hero {
-        width: 100%;
-        height: 50vh;
-    }
-
-    */ .menu {
-        /*display: none;*/
-        opacity: 0;
-        visibility: hidden;
-        flex-direction: column;
-        top: 0;
-        align-items: end;
-        background-color: rgb(74, 168, 168);
-        padding: 2rem;
-        font-size: 20px;
-    }
-
-    .body {
-        width: 100%;
     }
 
     .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
         position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #0080ff;
+        padding: 1rem;
+        border-radius: 5%;
     }
 
-    /*.menu.visible {
+    .nav.visible {
         opacity: 1;
         visibility: visible;
-    }*/
+    }
 
-    header {
-        align-items: center;
-        gap: 10px;
-        grid-template-columns: auto;
-        gap: 20px;
+    .nav .lista {
+        flex-direction: column;
+        align-items: end;
+        font-size: 15px;
     }
 
     .img-logo img {
-        width: 10px;
+        width: 5px;
         align-items: center;
     }
 
-    .imagen {
+    /*.imagen {
         width: 40%;
         text-align: center;
         margin: 5px;
         width: 20%;
+    } se achicaba demasiado la imagen asi que lo cambie*/
+    .imagen-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 5px;
+    }
+    
+    .imagen {
+        max-width: 100%;
+        height: auto;
+        margin: 5px;
+        text-align: center;
     }
 
 }
 
-/* Header */
 
-/*.hero {
-    width: 100%;
-    height: 25vh;
-    background-color: aquamarine;
-    justify-content: space-between;
-} son codigos anteriores en el que me quedaba mal la pagina*/
-
-/* nav */
-
-.nav {
-    width: 100%;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-}
 
 .footer {
     padding: 10px;
@@ -227,33 +208,23 @@ iframe {
 
 /* index2.html */
 
+
 .Reel {
     display: flex;
-    width: 50%;
-    margin: 10px;
-    padding: 10px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    /*height: 100vh;*/
 }
 
 .parrafo {
-    display: flex;
-    margin: 10px;
-    padding: 10px;
-    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-/*.Reelvideo {
-    display: flex;
-    width: 600px;
-    height: 400px;
-    margin: 20 px;
-    padding: 20px;
-    margin: 10px;
-    margin-left: 20px;
-}*/
 .Reelvideo {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,16 +238,32 @@ iframe {
     height: auto;
 }
 
-/*.Reelvideo2 {
-    display: flex;
-    width: 600px;
-    height: 400px;
-    margin: 20 px;
-    padding: 20px;
-    margin: 10px;
-    margin-left: 20px;
+@media screen and (max-width: 320px) {
+    .Reel {
+        padding: 20px;
+        /* Añadir un relleno interno a .Reel para reducir el espacio */
+    }
 
-}*/
+    .parrafo {
+        margin-top: 5px;
+        /* Reducir el margen superior del párrafo */
+        margin-bottom: 5px;
+        /* Reducir el margen inferior del párrafo */
+    }
+
+    .video {
+        margin-top: 5px;
+        /* Reducir el margen superior del video */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Reel {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
 .Reelvideo2 {
     display: flex;
     justify-content: center;
@@ -291,23 +278,112 @@ iframe {
     height: auto;
 }
 
-
 .Reel2 {
-    width: 50%;
-    margin: 10px;
-    padding: 10px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/
 }
 
 .parrafo2 {
-    display: flex;
-    margin: 20px;
-    padding: 20px;
-    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .Reelvideo2 {
+    margin-top: 10px;
     display: flex;
-    margin: 20px;
-    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*index3.html la galeria, se que me saltie una página iban a ser 5
+pero no iba a llegar*/
+
+
+
+.ariculo-lara {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.img-lara {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .ariculo-lara {
+        max-width: 90%;
+    }
+}
+
+
+/*index5.html diseño de formulario*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+label {
+    color: #0e3947;
+    /* Color celeste */
+}
+
+input[type="nombre"],
+input[type="email"],
+input[type="asunto"] {
+    width: 300px;
+    height: 30px;
+    background-color: #ffffff;
+    /* Color blanco */
+    border: none;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+    /* Ajusta la altura deseada */
+    background-color: #ffffff;
+    /* Color blanco */
+    border: none;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 150px;
+    height: 40px;
+    background-color: #00bfff;
+    /* Color celeste */
+    color: #ffffff;
+    /* Color blanco */
+    border: none;
+    margin-top: 10px;
+    /* Ajusta el margen superior deseado */
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    margin-left: 10px;
+    /* Ajusta el margen izquierdo deseado para separar los botones */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0080ff;
+    /* Color celeste oscuro */
 }

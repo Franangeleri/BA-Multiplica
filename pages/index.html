@@ -6,44 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenidos a mi pagina</title>
+    <!--Instalación para los iconos de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!--Parte de Css-->
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
-    <script src="../script.js"></script>
-    <!--<header class="hero">
-        <nav class="nav">
-            <figure class="img-logo">
-                <img src="../img/lara render.0026.png" alt="">
-            </figure>
-            <button id="abrir" class="abrir">abrir</button>
-            <ul class="menu" id="menu">
-                <button id="cerrar" class="cerrar">cerrar</button>
-                <a href="index.html">
-                    <li>inicio</li>
-                </a>
-                <a href="index2.html">
-                    <li>Reel</li>
-                </a>
-                <a href="index3.html">
-                    <li>Galeria</li>
-                </a>
-                <a href="../pages/index4.html">
-                    <li>Descargas</li>
-                </a>
-                <a href="../pages/index5.html">
-                    <li>Contacto</li>
-                </a>
-            </ul>
-        </nav>
-    </header> no los borre porque estoy probando. -->
     <header>
         <figure class="logo-3d">
             <img src="../img/logo img 3d.jpg" alt="logo">
         </figure>
-        <button id="abrir" class="abrir">abrir</button>
-        <nav class="nav">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
             <ul class="lista">
                 <li><a href="../pages/index.html">Inicio</a></li>
                 <li><a href="../pages/index2.html">Reel</a></li>
@@ -62,8 +39,10 @@
                     explorar una colección de animaciones en 3D que he creado con pasión y dedicación. Los modelos
                     de homero simpsons, el personaje femenino, y goofy los he hecho yo, tanto el modelo 3d, como el
                     rigging y la animación.</p>
-                <img src="../img/render lara.jpg" alt="" width="50%" class="imagen">
-                <img src="../img/render homero.jpg" alt="" class="imagen">
+                <div class="imagen-container">
+                    <img src="../img/render lara.jpg" alt="" width="50%" class="imagen">
+                    <img src="../img/render homero.jpg" alt="" class="imagen">
+                </div>
             </article>
         </section>
     </main>
@@ -87,7 +66,8 @@
             <span>Francisco Tomas Angeleri &copy;</span>
         </div>
     </footer>
-
+    <!--Parte de javascript-->
+    <script src="../scripts/script.js"></script>
 </body>
 
 </html>

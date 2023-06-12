@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,36 +11,44 @@
 </head>
 
 <body>
-    <header class="hero">
-        <nav class="nav">
-            <figure class="img-logo">
-                <img src="../img/lara render.0026.png" alt="">
-            </figure>
-            <button class="abrir">abrir</button>
-            <ul class="menu">
-                <a href="index.html">
-                    <li>inicio</li>
-                </a>
-                <a href="index2.html">
-                    <li>Reel</li>
-                </a>
-                <a href="index3.html">
-                    <li>Galeria</li>
-                </a>
-                <a href="index4.html">
-                    <li>Descargas</li>
-                </a>
-                <a href="index5.html">
-                    <li>Contacto</li>
-                </a>
+    <header>
+        <figure class="logo-3d">
+            <img src="../img/logo img 3d.jpg" alt="logo">
+        </figure>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
+            <ul class="lista">
+                <li><a href="../pages/index.html">Inicio</a></li>
+                <li><a href="../pages/index2.html">Reel</a></li>
+                <li><a href="../pages/index3.html">Galeria</a></li>
+                <li><a href="../pages/index5.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <footer>
-        <div class="footer" id="footer"><a href=""></a>
-            <span>Francisco Tomas Angeleri &copy;</span>
-        </div>
-    </footer>
 
+
+    <main>
+        <section>
+            <article class="ariculo-lara">
+                <h1>Model Sheet de Lara</h1>
+                <p>¡Hola! Quería contarte sobre el model sheet que hice inspirado en Lara Croft. Decidí hacer algo
+                    divertido y peculiar, así que le di a la cabeza un tamaño más grande, lo cual resultó en un toque
+                    cómico para mi proyecto en 3D. Creé dibujos de Lara de perfil y de frente a mano, luego los repasé
+                    en Photoshop para darles más definición y finalmente los pinté. Estos bocetos me sirvieron como guía
+                    para el siguiente paso: el modelado en 3D. Fue un proceso emocionante y creativo que me permitió dar
+                    vida a mi visión de Lara Croft. </p>
+                <img src="../img/tomb raider3.jpg" alt="" class="img-lara">
+            </article>
+        </section>
+    </main>
+    <main>
+        <footer>
+            <div class="footer" id="footer"><a href=""></a>
+                <span>Francisco Tomas Angeleri &copy;</span>
+            </div>
+        </footer>
+        <!--Parte de javascript-->
+        <script src="../scripts/script.js"></script>
 
 </body>

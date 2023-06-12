@@ -1,67 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!--Parte de Css-->
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
+
 <body>
-    <header class="hero">
-        <nav class="nav">
-            <figure class="img-logo">
-                <img src="../img/lara render.0026.png" alt="">
-            </figure>
-            <button class="abrir">abrir</button>
-            <ul class="menu">
-                <a href="../pages/index.html">
-                    <li>inicio</li>
-                </a>
-                <a href="../pages/index2.html">
-                    <li>Reel</li>
-                </a>
-                <a href="../pages/index3.html">
-                    <li>Galeria</li>
-                </a>
-                <a href="../pages/index4.html">
-                    <li>Descargas</li>
-                </a>
-                <a href="../pages/index5.html">
-                    <li>Contacto</li>
-                </a>
+    <header>
+        <figure class="logo-3d">
+            <img src="../img/logo img 3d.jpg" alt="logo">
+        </figure>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
+            <ul class="lista">
+                <li><a href="../pages/index.html">Inicio</a></li>
+                <li><a href="../pages/index2.html">Reel</a></li>
+                <li><a href="../pages/index3.html">Galeria</a></li>
+                <li><a href="../pages/index5.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <form action="index5.html">
-            <label for="nombre">Nombre: </label>
-            <input type="nombre" name="nombre" id="nombre">
-            <br>
+        <main>
+            <form action="index5.html">
+                <label for="nombre">Nombre: </label>
+                <input type="nombre" name="nombre" id="nombre">
+                <br>
 
-            <label for="email">Correo electronico: </label>
-            <input type="email" name="email" id="email">
-            <br>
+                <label for="email">Correo electronico: </label>
+                <input type="email" name="email" id="email">
+                <br>
 
-            <label for="asunto">Asunto: </label>
-            <input type="asunto" name="asunto" id="asunto">
-            <br>
+                <label for="asunto">Asunto: </label>
+                <input type="asunto" name="asunto" id="asunto">
+                <br>
 
-            <label for="comentario">Comentario: </label>
-            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-            <br>
+                <label for="comentario">Comentario: </label>
+                <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                <br>
 
-            <input type="submit">
-            <input type="reset" value="borrar campos">
+                <input type="submit">
+                <input type="reset" value="borrar campos">
 
-        </form>
-    </main>
-    <footer>
-        <div class="footer" id="footer"><a href=""></a>
-            <span>Francisco Tomas Angeleri &copy;</span>
-        </div>
-    </footer>
-    
+            </form>
+        </main>
+        <script src="../script.js"></script>
+        <footer>
+            <div class="footer" id="footer"><a href=""></a>
+                <span>Francisco Tomas Angeleri &copy;</span>
+            </div>
+        </footer>
+        <!--Parte de javascript-->
+        <script src="../scripts/script.js"></script>
 </body>
+
 </html>
