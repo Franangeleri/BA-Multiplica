@@ -10,7 +10,15 @@ abrir.addEventListener("click", () => {
 cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
 })
+//gif interactivo//
 
+//var gif = document.querySelector('.lara-gif');
+
+var gif = document.querySelector('.lara-gif');
+
+gif.addEventListener('click', function () {
+    gif.src = gif.src;
+});
 
 // script para formulario //
 

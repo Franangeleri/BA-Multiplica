@@ -173,7 +173,7 @@ footer .titulo2 {
         justify-content: center;
         margin: 5px;
     }
-    
+
     .imagen {
         max-width: 100%;
         height: auto;
@@ -305,7 +305,7 @@ pero no iba a llegar*/
 
 
 
-.ariculo-lara {
+.articulo-lara {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
@@ -317,9 +317,24 @@ pero no iba a llegar*/
     height: auto;
 }
 
-/* Media Query para dispositivos móviles */
-@media (max-width: 768px) {
-    .ariculo-lara {
+.lara-container {
+    position: relative;
+    display: inline-block;
+}
+
+.lara-gif {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/*javas*/
+.lara-gif.playing {
+    animation-play-state: running !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .articulo-lara {
         max-width: 90%;
     }
 }
