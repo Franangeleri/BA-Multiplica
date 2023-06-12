@@ -75,33 +75,27 @@ header {
     padding: 20px;
 }
 
-/*probando*/
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #9ae3ff;
-    /* Color celeste de fondo */
     height: 100px;
-    /* Ajusta la altura según tus necesidades */
 }
 
 footer span {
     color: rgb(0, 0, 0);
-    /* Color de texto blanco */
     display: flex;
     align-items: center;
 }
 
 footer .bi-youtube {
     margin-right: 5px;
-    /* Ajusta el margen según tus necesidades */
 }
 
 footer .titulo2 {
     margin-bottom: 0;
-    /* Elimina el margen inferior del título */
 }
 
 .abrir-menu {
@@ -161,12 +155,6 @@ footer .titulo2 {
         align-items: center;
     }
 
-    /*.imagen {
-        width: 40%;
-        text-align: center;
-        margin: 5px;
-        width: 20%;
-    } se achicaba demasiado la imagen asi que lo cambie*/
     .imagen-container {
         display: flex;
         flex-wrap: wrap;
@@ -214,7 +202,6 @@ iframe {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*height: 100vh;*/
 }
 
 .parrafo {
@@ -241,19 +228,15 @@ iframe {
 @media screen and (max-width: 320px) {
     .Reel {
         padding: 20px;
-        /* Añadir un relleno interno a .Reel para reducir el espacio */
     }
 
     .parrafo {
         margin-top: 5px;
-        /* Reducir el margen superior del párrafo */
         margin-bottom: 5px;
-        /* Reducir el margen inferior del párrafo */
     }
 
     .video {
         margin-top: 5px;
-        /* Reducir el margen superior del video */
     }
 }
 
@@ -300,8 +283,7 @@ iframe {
     height: 100vh;
 }
 
-/*index3.html la galeria, se que me saltie una página iban a ser 5
-pero no iba a llegar*/
+/*index3.html*/
 
 
 
