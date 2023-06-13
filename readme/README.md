@@ -14,4 +14,3 @@ Información adicional
 Tiempo de desarrollo: El proyecto se desarrolló en aproximadamente una semana y media, iniciando el 1 de junio de manera intensiva.
 
 Inspiración: El diseño y la estructura de la página web se basaron en los videos proporcionados por una de las profesoras. Se buscó lograr una presentación atractiva y fácil de navegar, enfocada en resaltar el contenido animado.
-[Enlace a mi sitio web](./pages/index.html)
